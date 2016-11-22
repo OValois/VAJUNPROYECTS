@@ -1,0 +1,676 @@
+/* 
+
+
+    _/                                  _/            
+   _/          _/_/_/  _/_/_/      _/_/_/  _/    _/   
+  _/        _/    _/  _/    _/  _/    _/  _/    _/    
+ _/        _/    _/  _/    _/  _/    _/  _/    _/     
+_/_/_/_/    _/_/_/  _/    _/    _/_/_/    _/_/_/      
+                                             _/       
+                                        _/_/          
+                                                 
+											   V 1.0                                  
+                                  													 
+                                  													 */
+@import "iconfont.css";
+@import "animate.min.css";
+
+/*-----------------------------------------------------------------------------------*/
+/* GENERAL
+/*-----------------------------------------------------------------------------------*/
+
+body{
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+	color: #3a3a3a;
+	font-weight: 700;
+	font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+
+p{
+	font-size: 1.2em;
+}
+
+.lead{
+	font-weight: 300;
+}
+
+
+
+
+button {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-bottom: 10px;
+	padding: 6px 12px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	border-radius: 5px;
+	vertical-align: middle;
+	text-align: center;
+	white-space: nowrap;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.428571429;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.visibility{
+	visibility: hidden;
+}
+
+.animated{
+	visibility: visible!important;
+}
+
+.myButton {
+	background-color:transparent;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	border-radius:9px;
+	border:4px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:17px;
+	padding:10px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 7px #69EA92;
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+.myButton2 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #69EA92;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #69EA92;
+	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
+	background:-moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-o-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-ms-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad', endColorstr='#5972a7',GradientType=0);
+	background-color:#637aad;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:3px solid #314179;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:15px 38px;
+	text-decoration:none;
+	text-shadow:0px 0px 8px #7a8eb9;
+}
+.myButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
+	background:-moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-o-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-ms-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
+	background-color:#69EA92;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	KEY COLOR
+/*-----------------------------------------------------------------------------------*/
+input[type="search"]{
+	width: 210px; /*ancho por defecto*/
+	background: #ededed url('') no-repeat 9px center; /*icono lupa*/
+	padding: 9px 10px 9px 32px;
+	border-radius: 20em;
+	-webkit-transition: all .8s; /* transición de .5seg a todos los elementos para chrome*/
+	-moz-transition: all .8s; /* transición de .5seg a todos los elementos para mozilla*/
+	-o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+	transition: all .8s; /* transición de .5seg a todos los elementos*/
+	outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="search"]:focus{
+	width: 330px; /*tamaño del boton buscar al hacer click*/
+	padding-left: 20px; /*espacio entre el icono lupa y el placeholder*/
+	color: #000;
+	background-color: #FFF;
+}
+/*---- Typography ----*/
+header h1, 
+.payoff h1,
+.details .carousel,
+.social a:hover{
+	color: #EBF7FF;
+}
+
+.features p{
+	color: 	#4754B8;
+}
+
+/*---- Background ----*/
+.features,
+.detail .carousel-indicators .active {
+	background: #59B1E7;	
+}
+	
+
+/*-----------------------------------------------------------------------------------*/
+/* NAVBAR
+/*-----------------------------------------------------------------------------------*/
+
+nav.navbar{
+	position: fixed;
+	top: -100%;
+	margin-bottom: 0px;
+	padding: 10px 0px 10px 0px;
+	width: 100%;
+	border-radius: 0px;
+	transition: all 0.2s;
+}
+
+.navbar-nav{
+	float: right;
+}
+
+nav.navbar.fixed-to-top{
+	top: 0px;
+}
+
+.navbar-default{
+	border: none;
+	border-bottom: 1px solid #eee;
+	background: #fff;
+	opacity: 0.95;
+	display: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #aaa;
+	font-size: 1.2em;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+	color: #3A3A3A;	
+	cursor: pointer;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.navbar-default .navbar-brand{
+	color: #333333;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 2em;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* HEADER 
+/*-----------------------------------------------------------------------------------*/
+
+header{
+	padding: 150px 0px 0px 0px;
+	height: 960px;
+	background: url('../img/nepal.jpg');
+	background-color: white!important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+header h1{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-weight: 300;
+	font-size: 100px;
+	font-family: 'Roboto Condensed', sans-serif;
+	
+}
+
+header p.lead{
+	font-size: 36px;
+}
+
+
+header .carousel-iphone{
+	margin-right: auto;
+	margin-left: auto;
+	width: 320px;
+	height: 672px;
+	background: url('../img/iphone-front.png') no-repeat;
+	background-size: 100%;
+	
+}
+
+header .carousel {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 95px 0px 0px 4px;
+	width: 282px;
+}
+
+header .carousel-indicators .active {
+	width: 15px;
+	height: 15px;
+	background: #444444;
+}
+
+header .carousel-indicators {
+	bottom: -63px;
+}
+
+header .carousel-indicators li {
+	display: inline-block;
+	margin: 1px;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #666666;
+	border-radius: 10px;
+	text-indent: -999px;
+	cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* PURCHASE
+/*-----------------------------------------------------------------------------------*/
+
+.purchase{
+	overflow: hidden;
+	padding: 100px 0px 100px 0px;
+	min-height: 200px;
+}
+
+.purchase button.app-store{
+	width: 152px;
+	height: 52px;
+	background: url(../img/badge-appstore.png) #3a3a3a no-repeat 0px 5px;
+	color: white;
+}
+button {
+ border: none;
+ background: #3a7999;
+ color: #f2f2f2;
+ padding: 20px;
+ font-size: 22px;
+ border-radius: 40px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+}
+button:hover {
+ background: rgba(0,0,0,0);
+ color: #3a7999;
+ box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	PAYOFF
+/*-----------------------------------------------------------------------------------*/
+
+.payoff{
+	overflow: hidden;
+	padding: 230px 0px 150px 0px;
+	min-height: 600px;
+	background: url('../img/dunes.jpg');
+	background-position: center top;
+	background-repeat: repeat-x;
+	color: white;
+}
+
+.payoff h1{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2.8em;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	DETAIL
+/*-----------------------------------------------------------------------------------*/
+
+.detail{
+	overflow: hidden;
+	padding: 50px 0px 0px 0px;
+	min-height: 500px;
+}
+
+.detail .title{
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+.detail .features .row{
+	margin-bottom: 40px;
+}
+
+.detail .carousel h1{
+	font-size: 3.8em;
+}
+.detail .carousel h1, .detail p{
+	text-align: left;
+	font-weight: 300;
+}
+
+.detail p{
+	color: #aaa;
+}
+
+.detail .carousel-control{
+	background: none;
+}
+
+.detail .app-screenshot{
+	overflow: hidden;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 95px;
+	width: 320px;
+	height: 450px;
+	background: url('../img/iphone-front.png') no-repeat;
+	background-size: 100%;
+
+
+}
+
+.detail .materias{
+	overflow: hidden;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 0px;
+	width: 320px;
+	height: 500px;
+	background-size: 200%;
+
+	
+}
+.detail .app-screenshot img{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 4px;
+	width: 280px;
+}
+
+.detail .carousel-indicators {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 5px;
+	padding-bottom: 8px;
+	width: 100%;
+	border-top: 1px solid #eee;
+	background: #ffffff;
+}
+
+.detail .carousel-indicators .active {
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+}
+
+.detail .carousel-indicators li {
+	display: inline-block;
+	margin: 1px;
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+	background: #eeeeee;
+	text-indent: -999px;
+	cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	FEATURES
+/*-----------------------------------------------------------------------------------*/
+
+.features{
+	overflow: hidden;
+	padding: 150px 0px 150px 0px;
+	min-height: 400px;
+	color: black;
+}
+
+.features p {
+	font-weight: 400;
+}
+
+.features h2{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.features .circle{
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 33px;
+	width: 150px;
+	height: 150px;
+	border: 2px solid #ffffff;
+	border-radius: 100%;
+	text-align: center;
+	
+}
+
+.features span.glyphicon, .features i{
+	margin-top: 3px;
+	color: #ffffff;
+	font-size: 5em;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	SOCIAL
+/*-----------------------------------------------------------------------------------*/
+
+.social{
+	overflow: hidden;
+	padding: 80px 0px 150px 0px;
+	min-height: 350px;
+	background: url('../img/sea.jpg');
+	background-position: center top;
+	background-repeat: repeat-x;
+	color: white;
+}
+
+.social h2{
+	color: white;
+}
+
+.social a {
+	margin-left: 10px;
+	color: #FFF;
+	font-size: 5em;
+	transition: all 0.3s;
+}
+
+.social a:hover{
+	text-decoration: none;
+	cursor: pointer;
+	
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	GET-IT
+/*-----------------------------------------------------------------------------------*/
+
+.get-it{
+	padding: 100px 0px 160px 0px;
+	text-align: center;
+}
+
+.get-it button.app-store{
+	width: 152px;
+	height: 52px;
+	background: url(../img/badge-appstore.png) #373737 no-repeat 0px 5px;
+	color: white;
+}
+
+.get-it hr{
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.get-it ul{
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.get-it ul li{
+	display: inline-block;
+	margin-left:30px;
+}
+
+.get-it ul li:first-child{
+	margin-left: 0px;
+}
+
+.get-it ul li a{
+	color: #aaa;
+	font-size: 1.2em;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.get-it ul li a:hover{
+	color: #3A3A3A;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	MEDIA QUERIES
+/*-----------------------------------------------------------------------------------*/
+
+@media (max-width:768px) {
+	
+	header{
+		padding-bottom: 50px;
+		min-height: 1000px;
+		height: 100%;
+	}
+	
+	.navbar-nav {
+		float: left;
+		text-align: left;
+}
+
+	
+}
+
+@media (max-width:992px) {
+
+.detail .carousel h1, .detail p{
+	text-align: center;
+}
+
+.detail p{
+		margin-bottom: 60px;
+}
+
+header, .social{
+	background-position-y: 0px;
+	background-size: 200%;
+}
+
+.payoff{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	min-height: 200px;
+}
+
+.payoff h1{
+	font-size: 24px;
+}
+
+.features .col-md-4{
+	margin-bottom: 60px;
+}
+
+}
+
+@media (max-width:480px){
+
+	header .carousel-iphone, .detail .app-screenshot{
+		width: 280px;
+	}
+	
+	header .carousel, .detail .app-screenshot img{
+		padding-top: 85px;
+		width: 245px;
+	}
+	
+	.detail .app-screenshot img{
+		margin-top: -12px;
+		padding-top: 0px;
+	}
+	
+	header{
+		padding-top: 30px;
+		padding-bottom: 0px;
+	}
+	
+	header h1{
+		font-size: 70px;
+	}
+	
+	.purchase{
+		padding-top: 50px;
+	}
+	
+	.features col-md-4{
+		margin-bottom: 50px;
+	}
+	
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+    .purchasebutton.app-store, .get-it button.app-store{
+        background: url(../img/badge-appstore@2x.png) #3a3a3a no-repeat 0px 5px;
+        background-size: 98%;
+    	color: white;
+    }
+}
+

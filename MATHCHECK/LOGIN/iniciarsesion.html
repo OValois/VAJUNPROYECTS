@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi Sitio | Iniciar Sesión</title>
+</head>
+<body>
+	<!--Creamos nuestro fomrulario con metodo POST y en la acción a realizar será login.php-->
+	<form method="POST" action="login.php">
+		<!--Creamos los campos y un label para cada uno de ellos-->
+		<label for="n_usuario">Usuario: </label>
+		<input type="text" name="n_usuario" id="n_usuario"/><br />
+		<label for="pwd">Contraseña: </label>
+		<!--Este input debe ser -type="password" para que no se muestren los caracteres-->
+		<input type="password" name="pwd" id="pwd"/><br />
+		<!--Al dar click al botón se ejecutará el -action\-->
+		<input type="submit" value="Iniciar Sesión"/>
+	</form>
+</body>
+</html>
